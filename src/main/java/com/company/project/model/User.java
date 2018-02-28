@@ -1,5 +1,6 @@
 package com.company.project.model;
 
+//import com.fasterxml.jackson.annotation.JsonFormat;
 import java.util.Date;
 import javax.persistence.*;
 
@@ -18,6 +19,7 @@ public class User {
     private Integer sex;
 
     @Column(name = "register_date")
+//    @JsonFormat(timezone = "GMT+8", pattern = "yyyyMMddHHmmss")
     private Date registerDate;
 
     /**
