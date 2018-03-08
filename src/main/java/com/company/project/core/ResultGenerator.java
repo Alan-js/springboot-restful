@@ -5,6 +5,8 @@ package com.company.project.core;
  */
 public class ResultGenerator {
     private static final String DEFAULT_SUCCESS_MESSAGE = "SUCCESS";
+    private static final String login_message = "用户名或密码不正确！";
+    private static final String username_message = "用户已存在！";
 
     public static Result genSuccessResult() {
         return new Result()
@@ -23,5 +25,10 @@ public class ResultGenerator {
         return new Result()
                 .setCode(ResultCode.FAIL)
                 .setMessage(message);
+    }
+
+    public static Result loginMessage() {
+        return new Result()
+                .setMessage(login_message);
     }
 }
