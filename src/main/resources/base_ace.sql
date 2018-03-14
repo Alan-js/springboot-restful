@@ -1,4 +1,4 @@
-CREATE DATABASE ace DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE ace DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 Use ace;
 
 /*
@@ -13,7 +13,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50527
 File Encoding         : 65001
 
-Date: 2018-03-08 18:23:33
+Date: 2018-03-09 10:20:22
 */
 
 SET FOREIGN_KEY_CHECKS=0;

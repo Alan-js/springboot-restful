@@ -60,7 +60,7 @@ public class BaseUserController {
        condition.createCriteria().andCondition("username ='"+ username +"'" + "and password ='"+ password +"'");
        List<BaseUser> baseUserList = baseUserService.findByCondition(condition);
        if(baseUserList.size() > 0) {
-           return ResultGenerator.genSuccessResult();
+           return ResultGenerator.genSuccessResult(baseUserList);
        }
         else {
            return ResultGenerator.loginMessage();
